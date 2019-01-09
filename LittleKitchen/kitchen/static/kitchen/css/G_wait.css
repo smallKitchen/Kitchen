@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+img{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background:#f7f5f6;
+    line-height: 1.5;
+}
+/**/
+.login{
+    width:auto;
+    height:100%;
+}
+header{
+    width:100%;
+    height: 0.4rem;
+}
+/**/
+.title{
+    width:7.5rem;
+    height: 2.1rem;
+    margin-bottom: 0.43rem;
+}
+.title_con{
+    padding:0.78rem 0 0.28rem 0.6rem;
+}
+.title_con .img_box{
+    width:1.04rem;
+    height: 1.04rem;
+    float: left;
+    margin-right: 25px;
+}
+.title_con h2{
+    font-size: 0.36rem;
+    float: left;
+    color:#323232;
+}
+/**/
+.denglu{
+    width:6.3rem;
+    height: 4.1rem;
+    margin:0 auto;
+    margin-bottom: 4.05rem;
+}
+.info{
+    width:6.3rem;
+    height: 2.33rem;
+    background: #fff;
+    border-radius: 0.05rem;
+    margin-bottom: 0.23rem;
+    box-shadow: 0 0 0.5rem 0.15rem rgba(0,0,0,0.1);
+}
+.group{
+    width:5.8rem;
+    height: 0.54rem;
+    padding: 0.24rem 0;
+    border-bottom: 0.02rem solid #f7f7f7;
+    margin: 0 auto;
+    position: relative;
+}
+.group .img_box{
+    width:0.54rem;
+    height: 0.54rem;
+}
+.group input{
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left:0.64rem;
+    height:0.24rem;
+    width:4rem;
+    border: none;
+    outline: none;
+}
+.forget{
+    width:100%;
+    height:0.38rem;
+    margin-bottom: 0.45rem;
+}
+.forget .img_box{
+    width:0.38rem;
+    height: 0.38rem;
+    margin-left: 0.34rem;
+    float: left;
+}
+.forget span{
+    display: block;
+    font-size: 0.2rem;
+    float: left;
+    margin-left: 0.12rem;
+    color:#b1afb0;
+}
+.go{
+    display: block;
+    width:3.6rem;
+    height: 0.7rem;
+    background: #f7f2ec;
+    border-radius: 0.35rem;
+    margin: 0 auto;
+    font-size: 0.22rem;
+    color:#fadba2;
+    text-align: center;
+    line-height: 0.7rem;
+}
+/**/
+.third{
+    width:auto;
+}
+.third h4{
+    font-size: 0.24rem;
+    line-height: 1;
+    text-align: center;
+    color:#b2b0b1;
+    position: relative;
+    margin-bottom: 0.48rem;
+}
+.third h4:before{
+    content: "";
+    display: block;
+    width:1.6rem;
+    height: 0.02rem;
+    background: #efedee;
+    position: absolute;
+    left:1.4rem;
+    top:0.11rem;
+}
+.third h4:after{
+    content: "";
+    display: block;
+    width:1.6rem;
+    height: 0.02rem;
+    background: #efedee;
+    position: absolute;
+    right:1.4rem;
+    top:0.11rem;
+}
+.third .img_box{
+    height:0.7rem;
+    width:auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+.third .img_box a{
+    display: block;
+    width:0.7rem;
+    height: 0.7rem;
+}
+.loading{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: rgba(255,255,255,0.9);
+}
+.loading .point_box{
+    width:100%;
+    height: 0.48rem;
+    position: absolute;
+    top:5rem;
+}
+.loading li{
+    width:0.48rem;
+    height: 0.48rem;
+    float: left;
+    border-radius: 50%;
+    margin-left: 0.2rem;
+}
+.loading .point_box .point3{
+    background: #fdc238;
+    animation: point1 3s linear infinite forwards;
+}
+@keyframes point1 {
+    from{
+        background: #fdc238;
+    }
+    33%{
+        background: #fad682;
+    }
+    66%{
+        background: #f8e5bb;
+    }
+    to{
+        background: #fdc238;
+    }
+}
+.loading .point_box .point2{
+    background: #fad682;
+    animation: point2 3s linear infinite forwards;
+}
+@keyframes point2 {
+    from{
+        background: #fad682;
+    }
+    33%{
+        background: #f8e5bb;
+    }
+    66%{
+        background: #fdc238;
+    }
+    to{
+        background: #fad682;
+    }
+}
+.loading .point_box .point1{
+    background: #f8e5bb;
+    margin-left: 2.9rem;
+    animation: point3 3s linear infinite forwards;
+}
+@keyframes point3 {
+    from{
+        background: #f8e5bb;
+    }
+    33%{
+        background: #fdc238;
+    }
+    66%{
+        background: #fad682;
+    }
+    to{
+        background: #f8e5bb;
+    }
+}
+.loading p{
+    font-size: 0.24rem;
+    color:#9d9990;
+    position: absolute;
+    top:5.8rem;
+    text-align: center;
+    width:100%;
+}

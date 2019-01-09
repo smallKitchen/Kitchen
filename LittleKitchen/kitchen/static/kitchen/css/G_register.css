@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+img{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.register{
+    width:auto;
+    height:100%;
+}
+.back{
+    width:auto;
+    height: 5.22rem;
+    position: relative;
+}
+.third{
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    top:2.48rem;
+    width:5.3rem;
+    height:1rem;
+    border-radius: 0.1rem;
+    background: rgba(230,45,102,0.4);
+}
+.second{
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    top:2.7rem;
+    width:5.8rem;
+    height:1rem;
+    border-radius: 0.1rem;
+    background: rgb(230,45,102);
+}
+.first{
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    top:2.93rem;
+    width:6.3rem;
+    border-radius: 0.1rem;
+    background: rgb(230,45,102);
+    overflow: hidden;
+    padding-bottom:0.3rem;
+}
+.info{
+    width:100%;
+    background: #fff;
+}
+
+.group{
+    width:5.8rem;
+    height: 0.54rem;
+    padding: 0.24rem 0;
+    border-bottom: 0.02rem solid #f7f7f7;
+    margin: 0 auto;
+    position: relative;
+}
+.group .img_box{
+    width:0.54rem;
+    height: 0.54rem;
+    position: relative;
+}
+.point{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    width:0.08rem;
+    height: 0.08rem;
+    background: #fcc336;
+    border-radius: 50%;
+}
+.group input{
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left:0.64rem;
+    height:0.24rem;
+    width:4rem;
+    border: none;
+    outline: none;
+}
+.code{
+    width:1.15rem;
+    height: 0.54rem;
+    background: #fff9eb;
+    border-radius: 0.27rem;
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 0.2rem;
+    color:#fcc135;
+    text-align: center;
+    line-height: 0.54rem;
+    right:0;
+}
+.go{
+    display: block;
+    width:3.6rem;
+    height: 0.7rem;
+    background: #f7f2ec;
+    border-radius: 0.35rem;
+    font-size: 0.22rem;
+    color:#fadba2;
+    text-align: center;
+    line-height: 0.7rem;
+    position: absolute;
+    top:9rem;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+

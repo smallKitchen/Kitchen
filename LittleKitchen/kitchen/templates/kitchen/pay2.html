@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>银行卡选择界面</title>
+    <script src="js/rem.js" ></script>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_996064_whk1a4fhaf.css">
+    <link rel="stylesheet" href="css/pay2.css">
+</head>
+<body>
+    <header>
+       <a href="" class="iconfont icon-jiantouarrowhead7"></a>
+       <h3>在线支付</h3>
+    </header>
+    <section class="money" >
+        <div class="sum">
+            <div class="circle" ></div>
+            <span class="one">您本次交易需要支付的金额</span><span class="two">RMB.</span><span class="three">480</span>
+        </div>
+        <div class="discount">
+            <div style="margin-top:0.30rem" class="circle" ></div>
+            <img src="image/支付页_10.png" alt="">
+            <span style="font-size:0.25rem;color:#9d9c9c;margin-top:0.16rem">使用优惠券</span><span style="font-size:0.25rem;color:#fdc238;margin:0.16rem 1.6rem 0 0.1rem">-&nbsp;60</span>
+            <span style="margin-right:0.19rem">最终支付</span><span style="font-weight:800; margin-right: 0.09rem; color:#fdc238;">RMB.</span><span style="font-weight:800; font-size:0.35rem;margin-top:0.08rem; color:#fc9929">420</span>
+        </div>
+    </section>
+    <section class="way_title">
+        <span>选择</span><span style="color:#fdc238">支付方式</span>
+    </section>
+
+   <!-- 银行卡选择 -->
+    <div style="background:url(image/支付页_03.png);background-size:contain" class="back">
+        <p class="title">
+            <img style="width:0.43rem;height:0.43rem;margin-right:0.24rem" src="image/支付页_03_1.png" alt="">
+            <span>中国建设银行</span>
+        </p>
+        <p class="type">CCB.</p>
+        <p class="number">6219   ****   ****   6239</p>
+        <div class="selection">
+                <div style="display:block"  class="spot"></div>     
+        </div>   
+    </div>
+    <div style="background:url(image/支付页_06.png);background-size:contain" class="back">
+        <p class="title">
+            <img style="width:0.43rem;height:0.43rem;margin-right:0.24rem" src="image/支付页_06_1.png" alt="">
+            <span>中国农业银行</span>
+            <p class="type">CCB.</p>
+            <p class="number">6219   ****   ****   6239</p>
+        </p>
+        <div class="selection">
+            <div class="spot"></div>  
+        </div> 
+    </div>
+    <!-- 支付按钮 -->
+    <div class="button_box">
+        <button>立即支付</button>
+    </div>
+
+    <!-- 弹出框一 -->
+    <div style="display:none" class="pop_one">
+        <i class="iconfont icon-guanbi"></i>
+        <img src="image/支付页_03_2.png" alt="">
+        <div class="pop_button">
+            立即支付
+        </div>
+        <p>您本次的支付金额为</p>
+        <div class="rmb">
+            <span style="color:#fdc238;font-size:0.25rem">RMB.</span>
+            <span style="color:#fc9929;font-size:0.35rem">420</span>
+        </div>
+        <span></span>
+    </div>
+
+    <!--弹出框二  -->
+    <div style="display:none" class="pop_two">
+        <div class="header">
+            <span>密码支付</span>
+        </div>
+        <div style="width:6.54rem; background:url(image/支付页_03.png);background-size:100%;background-repeat: no-repeat" class="back">
+            <p class="title">
+                <img style="width:0.43rem;height:0.43rem;margin-right:0.24rem" src="image/支付页_03_1.png" alt="">
+                <span>中国建设银行</span>
+            </p>
+            <p class="type">CCB.</p>
+            <p class="number">6219   ****   ****   6239</p>
+        </div>
+        <div class="password">
+            <span style="margin:0.41rem 3.64rem 0 0.24rem">支付的金额</span>
+            <span style="margin-top:0.41rem;color:#fdc238">RMB.</span>
+            <span style="margin-top:0.28rem;font-size: 0.38rem; color:#fc9929">420</span>
+        </div>
+        <ul class="input">
+            <li>
+                ·
+            </li>
+            <li>
+                ·
+            </li>
+            <li>
+                ·
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+<!-- 弹出框三 -->
+<div style="display:none" class="pop_three">
+    <div class="header">
+        <span>指纹支付</span>
+    </div>
+    <div style="width:6.54rem; background:url(image/支付页_03.png);background-size:100%;background-repeat: no-repeat" class="back">
+        <p class="title">
+            <img style="width:0.43rem;height:0.43rem;margin-right:0.24rem" src="image/支付页_03_1.png" alt="">
+            <span>中国建设银行</span>
+        </p>
+        <p class="type">CCB.</p>
+        <p class="number">6219   ****   ****   6239</p>
+    </div>
+    <div class="password">
+        <span style="margin:0.41rem 3.64rem 0 0.24rem">支付的金额</span>
+        <span style="margin-top:0.41rem;color:#fdc238">RMB.</span>
+        <span style="margin-top:0.28rem;font-size: 0.38rem; color:#fc9929">420</span>
+    </div>
+    <div class="fingerprint">
+        <img src="image/指纹.png" alt="">
+    </div>
+</div>
+
+<!-- 弹出框四   余额不足 -->  
+<div class="pop_four">
+    <i class="iconfont icon-guanbi"></i>
+    <img src="image/感叹号.png" alt="">
+    <p>您的银行卡余额不足 请更换其他支付方式</p>
+    <div style="background:url(image/支付页_03.png);background-size:100%;" class="back">
+        <p class="title">
+            <img style="width:0.43rem;height:0.43rem;margin-right:0.24rem" src="image/支付页_03_1.png" alt="">
+            <span>中国建设银行</span>
+        </p>
+        <p class="number">6219   ****   ****   6239</p>
+    </div>
+    <div style="background:url(image/支付页_06.png);background-size:100%" class="back">
+        <p class="title">
+            <img style="width:0.43rem;height:0.43rem;margin-right:0.24rem" src="image/支付页_06_1.png" alt="">
+            <span>中国农业银行</span>
+            <p class="number">6219   ****   ****   6239</p>
+        </p>
+    </div>
+</div>
+<four></four>
+</body>
+<script src="js/jQuery.js" ></script>
+</html>

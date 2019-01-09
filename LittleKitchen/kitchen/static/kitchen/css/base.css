@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-size:0.11rem;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display:block;
+}
+body{
+    background-color: #f7f5f5;
+    font-family: '苹方','微软雅黑';
+}

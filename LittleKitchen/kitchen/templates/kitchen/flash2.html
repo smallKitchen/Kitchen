@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>闪屏二</title>
+{% load static %}
+<script src="{% static 'kitchen/js/rem.js' %}" ></script>
+<link rel="stylesheet" href="{% static 'kitchen/css/flash1.css' %}">
+<link rel="stylesheet" href="{% static 'kitchen/swiper-4.4.6/dist/css/swiper.min.css' %}">
+<style>
+    .swiper-container {
+        width: 100%;
+        height:100%;
+    }  
+    .swiper-button-next{
+        background-image: url({% static 'kitchen/image/next1.png' %});
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width:1.0rem;
+        height:1.0rem;
+        border-radius: 50%;
+    }
+</style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="one" style="width:7.50rem;height:13.34rem; background-image: url({% static 'kitchen/image/闪屏页111_12.png' %});background-size: contain">
+                    <div class="title">
+                        <p style="font-weight:800; color:#fff; font-size:0.35rem;">特色美食 想吃就吃</p>
+                        <p style="color:#abadaf; font-size:0.25rem;">总有一道适合你</p>
+                    </div>   
+                </div>
+            </div>
+            <div class="swiper-slide">
+                 <div class="one" style="width:7.50rem;height:13.34rem; background-image: url({% static 'kitchen/image/闪屏页111_14.png' %});background-size: contain">
+                    <div class="title">
+                        <p style="font-weight:800; color:#fff; font-size:0.35rem;">语音视频 想看就看</p>
+                        <p style="color:#abadaf; font-size:0.25rem;">帮你轻松变大厨</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="one" style="width:7.50rem;height:13.34rem; background-image: url({% static 'kitchen/image/闪屏页111_16.png' %});background-size: contain">
+                    <div class="title">
+                        <p  style="font-weight:800; color:#fff; font-size:0.35rem;">直播做菜 想做就做</p>
+                        <p style="color:#abadaf; font-size:0.25rem;">随时随地新分享</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div style="bottom:3.32rem;"  class="swiper-pagination"></div>
+        
+        <!-- 如果需要导航按钮 -->
+        <!-- <div class="swiper-button-prev"></div> -->
+        <div style="right:43%;top:85%; outline:none;-webkit-tap-highlight-color:transparent;" class="swiper-button-next"></div>
+        
+    </div>
+
+    <script src="{% static 'kitchen/swiper-4.4.6/dist/js/swiper.min.js' %}"></script>
+    <script>        
+            var mySwiper = new Swiper ('.swiper-container', {
+              // 如果需要分页器
+              pagination: {
+                el: '.swiper-pagination',
+              },
+              
+              // 如果需要前进后退按钮
+              navigation: {
+                nextEl: '.swiper-button-next',
+                // prevEl: '.swiper-button-prev',
+              },
+              
+            })        
+            </script>
+</body>
+</html>

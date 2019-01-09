@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'kitchen/css/login.css' %}">
+    <script src="{% static 'kitchen/js/rem.js' %}"></script>
+    <script src="{% static 'kitchen/js/jQuery.js' %}"></script>
+</head>
+<style>
+    .register{
+    display: block;
+    width:3.6rem;
+    height: 0.7rem;
+    background: #FCC137;
+    border-radius: 0.35rem;
+    font-size: 0.22rem;
+    color:#fadba2;
+    text-align: center;
+    line-height: 0.7rem;
+    position: absolute;
+    top:7.3rem;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+</style>
+<body>
+    <div class="login">
+        <header></header>
+        <section class="title">
+            <div class="title_con">
+                <div class="img_box">
+                    <img src="{% static 'kitchen/image/G_aa.png' %}" alt="">
+                </div>
+                <h2>客官 <br> 欢迎来到小小厨</h2>
+            </div>
+        </section>
+        <section class="denglu">
+            <form style="height:6.0rem" action="/login/" method="post">
+                {% csrf_token %}
+                <div class="info">
+                    {{form.errors}}
+                    <div class="group">
+                        <div class="img_box">
+                            <img src="{% static 'kitchen/image/G_ab.png' %}" alt="">
+                        </div>
+                        {{ form.username }}
+                        <!--<input type="text" name="username" placeholder="请填写您的手机号码 邮箱 用户名">-->
+                    </div>
+                    <div class="group">
+                        <div class="img_box">
+                            <img src="{% static 'kitchen/image/G_ac.png' %}" alt="">
+                        </div>
+                        {{ form.password }}
+                        <!--<input type="password" name="password" placeholder="请填写您的用户密码 （6 16位）">-->
+                    </div>
+                </div>
+                 <!--<div  style=" width:100%; height:3.0rem">-->
+
+                        <!--{{ form.captcha }}-->
+                        <!--&lt;!&ndash;<input type="password" name="password" placeholder="请填写您的用户密码 （6 16位）">&ndash;&gt;-->
+                    <!--</div>-->
+                <div class="forget">
+                    <div class="img_box">
+                        <img src="{% static 'kitchen/image/G_ad.png' %}" alt="">
+                    </div>
+                    <a href=""><span>密码丢失 轻松找回</span></a>
+                </div>
+                <button type="submit" class="go" style="border:none;">立即登录</button>
+
+            </form>
+                <a href="{% url 'kitchen:register' %}" class="register" style="#FA780A">注册</a>
+        </section>
+        <section class="third">
+            <h4>第三方登录</h4>
+            <div class="img_box">
+                <a href="">
+                    <img src="{% static 'kitchen/image/G_ae.png' %}" alt="">
+                </a>
+                <a href="">
+                    <img src="{% static 'kitchen/image/G_af.png' %}" alt="">
+                </a>
+                <a href="">
+                    <img src="{% static 'kitchen/image/G_ag.png' %}" alt="">
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    let password=$('[name=password]')
+    let login=$('.go')
+    password.bind('input propertychange', function() {
+        login.css('background','#FA780A')
+    });
+
+    let username=$('[name=username]')
+    let register=$('.register')
+    username.bind('input propertychange', function() {
+        register.css('background','#f7f2ec')
+    });
+</script>
+</html>

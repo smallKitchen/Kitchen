@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="{% static 'kitchen/css/index.css' %}">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_996064_udode20327p.css">
+    <link rel="stylesheet" href="{% static '/kitchen/swiper-4.4.6/dist/css/swiper.min.css' %}">
+    <script type="text/javascript" src="{% static 'kitchen/js/rem.js' %}"></script>
+</head>
+<body>
+    <div class="bg">
+        <!-- 顶部搜索开始 -->
+        <header>
+            <div class="left">
+                <p>太原</p>
+                <span class="iconfont icon-iconfonticonfonti2"></span>
+            </div>
+            <div class="min">
+                <input type="text" name="" id="" placeholder="请输入您要搜索的内容">
+                <img src="{% url 'kitchen/img/index2_l.gif' %}" alt="">
+            </div>
+            <div class="right">
+                <img src="img/index1_l.gif" alt="">
+            </div>
+        </header>
+        <!-- 顶部搜索结束 -->
+        <!-- 轮播图开始 -->
+        <div class="swiper-container" id="lunbo">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/lunbo1_l.png" alt="" class="img">
+                    <div class="text">
+                        <img src="img/lbtext1_l.png" alt="" class="text1">
+                        <img src="img/lbtext2_l.png" alt="" class="text2">
+                        <img src="img/lbtext3_l.png" alt="" class="text3">
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="img/lunbo2_l.png" alt="" class="img"></div>
+                <div class="swiper-slide"><img src="img/lunbo3_l.png" alt="" class="img"></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 轮播图结束 -->
+        <!-- 选择按钮开始 -->
+        <section class="change">
+            <div class="box">
+                <button class="aptitude">
+                    <a href=""> 
+                        <img src="img/change2_l.gif" alt="">
+                        <span>智能煮菜</span> 
+                    </a>
+                </button>
+                <button class="menu">
+                    <a href="">
+                        <img src="img/change1_l.png" alt="">
+                        <span>菜谱分类</span>
+                    </a>
+                </button>
+            </div>
+        </section>
+        <!-- 选择按钮结束 -->
+        <!-- 时令推荐开始 -->
+        <section class="season">
+            <h2>时令推荐</h2>
+            <div class="main">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="img/season1_l.gif" alt="" class="food">
+                            <h2>澳洲古饲韩式烤肉片</h2>
+                            <p> <span>已订购</span><i>680</i></p>
+                            <div class="stars">
+                                <img src="img/star1_l.gif" alt="">
+                                <img src="img/star1_l.gif" alt="">
+                                <img src="img/star2_l.gif" alt="">
+                            </div>
+                        </a>
+                    </li>
+                   <li>
+                        <a href="">
+                            <img src="img/season2_l.gif" alt="" class="food">
+                            <h2>养生素菜三合</h2>
+                            <p> <span>已订购</span><i>680</i></p>
+                            <div class="stars">
+                                <img src="img/star1_l.gif" alt="">
+                                <img src="img/star1_l.gif" alt="">
+                                <img src="img/star2_l.gif" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="img/season3_l.gif" alt="" class="food">
+                            <h2>养生烩三鲜</h2>
+                            <p> <span>已订购</span><i>680</i></p>
+                            <div class="stars">
+                                <img src="img/star1_l.gif" alt="">
+                                <img src="img/star1_l.gif" alt="">
+                                <img src="img/star2_l.gif" alt="">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 时令推荐结束 -->
+       
+        <!-- 人气推荐开始 -->
+        <section class="popularity">
+            <div class="top">
+                <h2>人气推荐</h2>
+                <p>查看全部 <span class="iconfont icon-iconfonticonfonti2copycopy"></span> </p>
+            </div>
+            <div class="main">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <img src="img/lunbo3_l.png" alt="" class="pfood">
+                            </div>
+                            <p>养生菌菇锅</p>
+                            <span>选自健康食材，精心烹制</span>
+                            <div class="stars">
+                                <img src="img/star1_l.gif" alt="">
+                                <img src="img/star1_l.gif" alt="">
+                                <img src="img/star2_l.gif" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <img src="img/lunbo2_l.png" alt="" class="pfood" style="margin-left:-0.2rem;height:2.44rem">
+                            </div>
+                            <p>麻辣藤椒锅</p>
+                            <span>选自健康食材，精心烹制</span>
+                            <div class="stars">
+                                <img src="img/star1_l.gif" alt="">
+                                <img src="img/star1_l.gif" alt="">
+                                <img src="img/star2_l.gif" alt="">
+                            </div> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 人气推荐结束 -->
+        <!-- 底部开始 -->
+        <footer>
+            <div class="box">
+                <a href="" class="home">
+                    <img src="img/home1_l.png" alt="">
+                    <span style="color: #FDBB33;">首页</span>
+                </a>
+                <a href="" class="home">
+                    <img src="img/find1_l.png" alt="">
+                    <span>发现</span>
+                </a>
+                <a href="" class="home">
+                    <img src="img/shop1_l.png" alt="">
+                    <span>商城</span>
+                </a>
+                <a href="" class="home">
+                    <img src="img/my1_l.png" alt="">
+                    <span>我的</span>
+                </a>
+            </div>
+        </footer>
+        <!-- 底部结束 -->
+    </div>
+    <script src="{% static 'kitchen/swiper-4.4.6/dist/js/swiper.min.js' %}"></script>
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+          autoplay: true,//可选选项，自动滑动
+          loop: true, // 循环模式选项
+          // 如果需要分页器
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        })        
+        </script>
+</body>
+</html>

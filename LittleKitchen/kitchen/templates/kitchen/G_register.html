@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'kitchen/css/G_register.css' %}">
+    <script src="{% static 'kitchen/js/rem.js' %}"></script>
+    <script src="{% static 'kitchen/js/jQuery.js' %}"></script>
+</head>
+    <style>
+        .captcha{
+            width:1.15rem;
+            height: 0.54rem;
+            background: #fff9eb;
+            border-radius: 0.27rem;
+            position: absolute;
+            top:0;
+            bottom:0;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: 0.2rem;
+            color:#fcc135;
+            text-align: center;
+            line-height: 0.54rem;
+            right:0;
+        }
+        .errorlist{
+            font-size:0.2rem;
+            color:red;
+            padding:0 0.3rem;
+        }
+    </style>
+<body>
+    <div class="register">
+        <div class="back">
+            <img src="{% static 'kitchen/image/G_ai.png' %}" alt="">
+            <div class="third"></div>
+            <div class="second"></div>
+            <form action="/register/" method="post">
+                {% csrf_token %}
+                <div class="first">
+                    <div class="info">
+                        <!--<div class="group">-->
+                            <!--<div class="img_box">-->
+                                <!--<img src="{% static 'kitchen/image/G_ab.png' %}" alt="">-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash;<input type="text" name="username" placeholder="请填写您的用户名">&ndash;&gt;-->
+                        <!--</div>-->
+                        {{form.errors}}
+                        <div class="group">
+                            <div class="img_box">
+                                <img src="{% static 'kitchen/image/G_ab.png' %}" alt="">
+                            </div>
+                            <!--<input type="text" name="tel" placeholder="请填写您的手机号码">-->
+                            {{ form.username }}
+                        </div>
+                        <div class="group">
+                            <div class="img_box">
+                                <div class="point"></div>
+                            </div>
+                            <!--<input type="text" name="code" placeholder="请填写您的验证码" style="width:3rem;">-->
+                            {{ form.captcha }}
+
+                            <!--<div class="code">验证码</div>-->
+                        </div>
+                        <div class="group">
+                            <div class="img_box">
+                                <img src="{% static 'kitchen/image/G_ac.png' %}" alt="">
+                            </div>
+                            <!--<input type="text" name="password" placeholder="请设置您的密码">-->
+                            {{ form.password }}
+                        </div>
+                        <div class="group">
+                            <div class="img_box">
+                                <img src="{% static 'kitchen/image/G_ac.png' %}" alt="">
+                            </div>
+                            <!--<input type="text" name="passwords" placeholder="重复您的密码 以便于进行确认">-->
+                            {{ form.passwords }}
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="go" style="border:none;">立即注册</button>
+            </form>
+            <!--<a href="/login/">去登录</a>-->
+        </div>
+    </div>
+</body>
+<script>
+    let passwords=$('[name=passwords]')
+    let register=$('.go')
+    passwords.bind('input propertychange', function() {
+        register.css('background','#FA780A')
+    });
+
+    $(".captcha").click(function(){
+        $.ajax({
+            url:"/captcha/refresh/",
+            dataType:"json",
+            success:function(e){
+                console.log(e)
+                $(".captcha").attr("src",e['image_url'])
+                $("#id_captcha_0").val(e['key'])
+            }
+        })
+    })
+
+</script>
+</html>

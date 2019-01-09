@@ -1,0 +1,378 @@
+@import url(base.css);
+/* 头部 */
+body{
+    background-color:#f7f5f5;
+}
+header{
+    box-sizing: border-box;
+    padding:0 0.24rem;
+    width: 100%;
+    height:0.9rem;
+    background-color:#f7f5f5;
+    border-bottom:1px solid #eae9e9;
+    overflow: hidden;   
+}
+header a{
+    display:block;
+    margin-top:0.32rem;
+    height:0.58rem;
+    float:left;
+    font-size: 0.22rem;
+}
+header h3{
+    display:block;
+    width:1.7rem;
+    height: 100%;
+    float:left;
+    font-size:0.32rem;
+    color:#66696e;
+    text-align: center;
+    line-height:0.9rem;
+    margin-left:2.30rem;
+}
+/* 支付金额及优惠券 */
+.money{
+    width:100%;
+    height:2.04rem;
+    background-color:#f7f5f5;
+    padding:0.73rem 0.24rem 0;
+    box-sizing: border-box;
+}
+.money .sum{
+    width:100%;
+    height: 0.57rem;
+    background-color:#f7f5f5;
+    overflow: hidden;
+}
+.money .circle{
+    margin-top:0.20rem;
+    float:left;
+    width:0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    background-color:#fdc238;
+}
+.sum .one{
+    display:block;
+    float:left;
+    width: auto;
+    font-size:0.24rem;
+    color:#9d9c9c;
+    margin:0.08rem 2.37rem 0 0.14rem;
+}
+.sum .two{
+    display:block;
+    float:left;
+    width: auto;
+    font-size:0.25rem;
+    color:#9d9c9c;
+    font-weight: 800;
+    margin:0.08rem 0.09rem 0 0; 
+}
+.sum .three{
+    display:block;
+    float:left;
+    width: auto;
+    font-size:0.35rem;
+    color:#000;
+    font-weight: 800;
+}
+.money .discount{
+    width:100%;
+    height: 0.74rem;
+    background-color:#f7f5f5;
+    overflow: hidden;
+}
+.discount img{
+    float: left;
+    width:0.40rem;
+    height: 0.30rem;
+    margin:0.20rem 0.24rem 0 0.14rem;
+    box-shadow: 0 0 0.06rem 0.04rem rgba(246,220,166,0.6)
+}
+.discount span{
+    display:block;
+    float:left;
+    color:#9d9c9c;
+    margin-top:0.16rem;
+    font-size:0.25rem;
+}
+.way_title{
+    width:100%;
+    height:1.00rem;
+    padding:0.46rem 0.24rem 0;
+    box-sizing: border-box;
+    font-size:0.27rem;
+    font-weight: 800;
+    color:#4b4b4b;
+}
+/* 选择银行卡 */
+.back{
+    margin:0.24rem auto;
+    width:6.78rem;
+    height:1.92rem;
+    border-radius: 0.1rem;
+    padding:0.24rem 0.24rem 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.back .title{
+    width:6.30rem;
+    height:0.47rem;
+}
+.back img{
+    float:left;
+}
+.back span{
+    line-height: 0.47rem;
+    font-weight: 800;
+    font-size:0.25rem;
+    color:#fff;
+}
+.back .type{
+    width: auto;
+    height: 0.28rem;
+    font-size:0.25rem;
+    font-weight: 800;
+    color:#fff;
+    margin:0.25rem 0 0.22rem 0.65rem;
+}
+.back .number{
+    width: auto;
+    height: 0.28rem;
+    font-size:0.25rem;
+    font-weight: 800;
+    color:#fff;
+    margin:0 0 0 0.65rem;
+}
+.back .selection{
+    width:0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+    border:0.04rem solid rgba(255,255,255,0.3);
+    position: absolute;
+    top:0.81rem;
+    right:0.24rem;
+}
+.back .selection .spot{
+    position: absolute;
+    top:0.04rem;
+    right: 0.04rem;
+    width:0.27rem;
+    height:0.27rem;
+    border-radius:50%;
+    background-color:#fff;
+    display:none;
+}
+/* 支付按钮 */
+.button_box{
+    width:100%;
+    height:1.98rem;
+    margin-top:3rem;
+    background-color:#fff;
+    overflow: hidden;
+}
+.button_box button{
+    display:block;
+    width:3.64rem;
+    font-size: 0.25rem;
+    color:#fff;
+    height:0.70rem;
+    border-radius:0.70rem;
+    margin:0.68rem auto 0;
+    border:none;
+    outline: none;
+    background-color:#fdc238;
+    box-shadow: 0 0.02rem 0.3rem 0.06rem rgba(254,236,194,0.9)
+}
+/* 弹出框一 */
+.pop_one{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    width:5.70rem;
+    height: 3.51rem;
+    background-color:#fff;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.1rem 8rem rgba(254,252,253,0.8);
+}
+.pop_one .pop_button{
+    position: absolute;
+    bottom:-0.35rem;
+    left:0;
+    right:0;
+    margin:0 auto;
+    width:3.64rem;
+    font-size: 0.25rem;
+    text-align: center;
+    line-height: 0.70rem;
+    color:#fff;
+    height:0.70rem;
+    border-radius:0.70rem;
+    margin:0.68rem auto 0;
+    border:none;
+    outline: none;
+    background-color:#fdc238;
+    box-shadow: 0 0.02rem 0.3rem 0.06rem rgba(254,236,194,0.9)
+}
+.pop_one img{
+    width:1.0rem;
+    height: 1.0rem;
+    margin:0.24rem auto;
+}
+.pop_one p{
+    width:auto;
+    height:0.30rem;
+    text-align: center;
+    line-height: 0.30rem;
+    font-size:0.25rem;
+    color:#a3a3a3;
+    font-weight: 400;
+    margin:0.40rem auto 0.20rem;
+}
+.pop_one .rmb{
+    width:1.56rem;
+    margin:0 auto;
+    height:0.38rem;
+}
+.pop_one .iconfont{
+    position: absolute;
+    top:0.24rem;
+    right:0.24rem;
+    font-size:0.25rem;
+    color:#b2b2b2;
+}
+/* 弹出框二 */
+.pop_two{
+    position: fixed;
+    padding:0.24rem;
+    box-sizing: border-box;
+    top:2.24rem;
+    left:0;
+    right:0;
+    margin:0 auto;
+    width:7.02rem;
+    height: 6.79rem;
+    background-color:#fff;
+    border-radius: 0.02rem;
+    box-shadow: 0 0 0.1rem 8rem rgba(254,252,253,0.8);
+}
+.header{
+    width:100%;
+    height: 1.12rem;
+}
+.header span{
+    font-size:0.25rem;
+    font-weight:800rem;
+    color:#696c71;
+}
+.password{
+    width: 6.55rem;
+    height:1.09rem;
+    border-bottom:0.01rem solid #f2f2f2;
+}
+.password span{
+    display: block;
+    float:left;
+    font-size:0.25rem;
+    font-weight: 800;
+    color:#a3a3a3;
+}
+.input{
+    width:4.5rem;
+    height:0.55rem;
+    margin:0.71rem auto 0;
+}
+.input li{
+    width:0.54rem;
+    float:left;
+    border-radius: 0.02rem;
+    margin-right:0.24rem;
+    height:100%;
+    font-size:0.3rem;
+    font-weight: 800;
+    text-align:center;
+    line-height:0.60rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+.input li:last-child{
+    margin-right:0;
+}
+/* 弹出框三 */
+.pop_three{
+    padding:0.24rem;
+    box-sizing: border-box;
+    width: 7.02rem;
+    height: 7.81rem;
+    position: fixed;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 0.1rem 8rem rgba(254,252,253,0.8);
+}
+.pop_three .fingerprint{
+    width: 1.46rem;
+    height: 1.46rem;
+    margin:0.61rem auto 0;
+    border-radius: 50%;
+    border:0.03rem solid #f2f2f2;
+    position: relative;
+}
+.fingerprint>img{
+    width:1.10rem;
+    height: 1.10rem;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
+/* 弹框四  余额不足 */
+.pop_four{
+    width: 5.70rem;
+    height: 5.66rem;
+    padding: 0.24rem;
+    box-sizing: border-box;
+    position: fixed;
+    border-radius: 0.3rem;
+    top:4.50rem;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 0.1rem 8rem rgba(254,252,253,0.8);
+}
+.pop_four>img{
+    width: 1.0rem;
+    height: 1.0rem;
+    margin:0 auto;
+}
+.pop_four>p{
+    margin:0.45rem auto;
+    width:100%;
+    height: 0.30rem;
+    font-size: 0.25rem;
+    color: #a3a3a3;
+    font-weight: 800;
+    text-align: center;
+    line-height: 0.30rem;
+}
+.pop_four .back{
+    background-repeat: no-repeat;
+    width:100%;
+    height: 1.30rem;
+}
+.pop_four .iconfont{
+    position: absolute;
+    top:0.24rem;
+    right:0.24rem;
+    font-size:0.25rem;
+    color:#b2b2b2;
+}
